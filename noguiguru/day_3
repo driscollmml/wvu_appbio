@@ -1,0 +1,59 @@
+#How to get a data set
+#Start with Sequence read archive
+#step 1, LOOK FOR ORGANISM!!!
+#Step 2, filter results for paird, and illumina
+#Step 3, choose organism data set
+#Step 4, look at an individual dataset evaluate coverage based on presumed genome size (use ncbi genome setting)
+#Step 4, verify genomic dna. forward and reverse. look at read length.
+#Step 5, save search parameters
+#Step 6, go to assembly!!!!!
+#Step 7, Now you have a dataset
+
+
+#How to download Data
+#Step 1, Go to the SRR page, This is your dataset
+#step 2, go to Data access, Not reads!
+#Step 3, Click Sra-Download AND DOWNLOAD!!!! YAY!!!!!! YAYYYYYYY
+#step 4, verify fastq
+
+#How to make a Branch (No trees necessary)
+#Info. THERE EXIST BRANCH MASTER!!!!!!!!!!
+#Info. We can make a branch with something different.
+#info. Remote repository is often 1 commit ahead/behind the remote/master
+#info. Make maseter 2 to create a more current or a branch that separates the new ideas
+#info. Making a second master, is important to make differences that are in a different BRANCH
+#info. We should have our own branch, Called ourbranch
+#Step 1, Have the repository
+git clone https:// yadda_yadda_yadda
+#step 2, look at branches
+git branch
+#step 3, make branch (refer to cheat sheet in day_2)
+git branch sweet_changes
+#step 4, check where you are, stay put, should still be on master
+git status
+#step 5, got to your new branch
+git checkout sweet_changes
+#Step 6, make changes in the new branch repository locally
+touch sweet_new_file
+#step 7, look around
+git status
+#step 8, make a new directory in the repository for the new branches
+mkdir sweet_changes
+#step 9, let the remote repository know you have made sweet_changes
+git add *
+#step 10, commit changes
+git commit -m "made a sweet_new_file"
+#step 11, push it up
+git push origin sweet_changes
+#info. You can easily switch between branches
+git checkout master
+#info. How To Merge branches
+#step 1, merge branches
+git merge sweet_changes
+git status
+#step 2, push to MASTER
+Git push origin master
+#switch back to the master
+git checkout master
+git status
+#verify with gui
