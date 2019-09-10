@@ -1,0 +1,15 @@
+PROPOSAL 1
+PEER REVIEW ASSIGNMENTS
+
+final proposals can be found in the directory instructor/proposals_1/.
+
+IMPORTANT NOTE:
+please MAKE A PERSONAL COPY of the Word document if you prefer to work electronically!
+
+
+group "gitgub" will review the proposal from group "nkob"
+
+group "nkob" will review the proposal from group "noguiguru"
+
+group "noguiguru" will review the proposal from group "gitgub"
+
