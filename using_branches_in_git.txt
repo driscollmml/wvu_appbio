@@ -1,0 +1,53 @@
+# ALWAYS update your local branch first
+git pull
+
+# create a new branch called "foo"
+# this exists only in your local repository for now
+# by default, "foo" begins life as an exact duplicate of the current branch (i.e., master)
+git branch foo
+
+# switch to the new branch that you just created
+git checkout foo
+
+# ask git to report the active branch. make sure it says "foo."
+git branch
+
+# make some changes in your local repo
+# these changes will only be made to the active branch!
+# here I'm just creating a new empty file...
+touch testfile.txt
+
+# ...and then writing some text to that file
+echo "Hello world" > testfile.txt
+
+# do the git 3-step:
+# 1. add new content
+git add *
+
+# 2. commit your changes
+git commit -m "Added a test file."
+
+# 3. push your changes to the remote repo
+# note that you are making changes to the branch "foo" now, not "master"
+git push origin foo
+
+# now your local repo will remain pointing at the branch "foo" until you change it
+# you can switch back to the master (or any other branch) using checkout
+git checkout master
+git pull
+git status
+
+# when you are ready to merge your branch with the primary (master), use git merge
+# first, switch to the target: i.e., the branch you are merging into
+git checkout master
+git merge foo
+
+# now do the git 3-step to commit the changes to the remote repo
+git add *
+git commit -m "merged commits from foo branch."
+git push origin master
+
+# remember that now you are pointing at the master branch again
+# always a good idea to check your branch before making changes
+git branch
+
