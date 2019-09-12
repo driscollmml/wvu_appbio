@@ -7,9 +7,9 @@ IMPORTANT NOTE:
 please MAKE A PERSONAL COPY of the Word document if you prefer to work electronically!
 
 
-group "gitgub" will review the proposal from group "nkob"
+1:00-1:25. group "noguiguru" will review the proposal from group "gitgub"
 
-group "nkob" will review the proposal from group "noguiguru"
+1:25-1:50. group "nkob" will review the proposal from group "noguiguru"
 
-group "noguiguru" will review the proposal from group "gitgub"
+1:50-2:15. group "gitgub" will review the proposal from group "nkob"
 
