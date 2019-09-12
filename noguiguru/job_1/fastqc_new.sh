@@ -82,7 +82,7 @@ cd $SCRATCH
 # the manual for abyss-pe can be found at https://github.com/bcgsc/abyss#assembling-a-paired-end-library
 # the publication describing abyss-pe can be found at https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2694472/
 #
-fastqc rtyphi_minlen70_1P.fastq rtyphi_minlen70_2P.fastq
+fastqc SRR8245541.1.fastq
 
 
 
