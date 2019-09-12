@@ -1,0 +1,17 @@
+This is the file I made with touch.
+
+typing tab completes the text or will give you options
+
+This file will also verify the directions for Spruce.
+
+ssh Username@spruce.hpc.wvu.edu
+
+Wvu Password: TyPe yOuR pAsSwOrD
+
+Spruce Scratch folder directions: /scratch in home on spruce
+
+Fun tools:
+
+Remember if you don't know add "man *command*" gives you command manual
+
+Scp FiLe_NaMe Username@spruce.hpc.wvu.edu:/scratch/Username
