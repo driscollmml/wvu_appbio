@@ -1,0 +1,73 @@
+BIOL 593F -  Command Line Notes
+
+
+ls - list contents of current directory
+        ls -la [or] -lah
+pwd - shows present working directory
+cd - change directory. Define argument: ie; cd Desktop\
+        ~ -> relative path to home (absolute path: /Users/username/)
+        ../ -> relative path step-down
+rm (filename) - remove file
+touch (filename) - create file, include desired extension (.txt)
+mkdir (name) - make a directory of specified name at your current location
+vim (name.txt) - opens vim word processor function to create a text file
+        i - to edit
+        esc + shift + zz - save
+less (filename.txt) - view contents of file
+        q - quit
+
+
+git clone (address) - clone a file from github
+
+
+Committing files to github:
+git pull - update local git directory with master branch
+mv (file) (location) - move a file from current path to target directory, ie; local git folder
+git add * - adds all new files that you’ve added to the cloned git folder 
+                (* denotes all, can swap the ‘*’ argument for specific file name)
+git status - check if local directory is up to date with the master branch
+git commit -m “Note” - Note will be the commit description
+git push origin master - push committed changes to the master branch. (master -> other branch)
+
+
+git branch - view available branches
+git branch (name) - create a new branch
+git checkout (branch) - switch branches
+
+
+Merging branches in Git:
+git checkout master - switch to master branch
+git pull - ensure master branch is up to date on local
+git merge (branch name) - merging specified branch with master
+git status
+git push origin master
+
+
+echo “Text” >> filename.txt - adds text to the specified file without needing vim
+which bash - locates path of bash or other argument
+./(script.file) - specifies file at current location
+chmod +x filename.sh - “-x” argument adds executability to a .sh file to resolve an error.
+
+
+
+
+Accessing Spruce:
+ssh username@spruce.hpc.wvu.edu
+
+
+        -help
+	man (program) -> manual page
+	rih0001 is the head node: do not submit jobs from here; use qsub command.
+
+
+scp filename username@spruce.hpc.wvu.edu:/scratch/username - scp (location) (target)
+	Uploads file from current directory (or otherwise specified path) to your spruce scratch folder. Issue this command from local directory, not spruce.
+scp username@spruce.hpc.wvu.edu:/scratch/username/*.html .
+	This is an example of targeting all (*) html files in your scratch drive and downloading them to your current working directory (.). Instead of “.”, you can specify path (~/Desktop). Example was used to download fastqc output from $SCRATCH. 	This should also be done locally (not on a shell signed into spruce).
+qsub filename.sh - on spruce, this will submit a file to the queue
+qstat - shows all queued jobs and their status
+
+
+Editing your shell script for fastqc analysis of fastq data files:
+fastqc filename.fastq.gz
+        File must be uploaded to your scratch drive.
