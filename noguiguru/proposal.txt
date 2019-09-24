@@ -1,0 +1,20 @@
+Introduction: To begin with, the species we will be examining is Candidatus Sulcia muelleri (C. Sulcia muelleri) the suborder of the Auchenorrhyncha . C. Sulcia muelleri is a symbiont in the sap-feeding pest insect affiliated with the maize leafhopper (ML). This bacterium increases in abundance inside of specialized host cells, providing the host with amino acids to supplement nutritional deficiencies (1). C. Sulcia muelleri genomes have a range of sizes from 191 to 227 kb which varies in genes content for the biosynthesis of seven or eight amino acids. The remaining amino acids and their insect hosts have acquired lineage specific secondary symbionts (2). Likewise, ML, Cicadulina mbila, known for being associated with the Maize streak virus (MSV), has been infecting plants by feeding on the phloem tissues(3). Other genus associated with this vector such as Dalbulus maidis, is associated with the destruction of many corn fields. 
+Moreover, we will be examining the Kolla paulula (K. paulula) , a vector associated with Xyella fastidiosa that causes Pierves diseases seen in Taiwan. The genome that was sequenced was 253,942bp, contained 22.7% GC, 237 predicted protein coding genes, and 34 RNA genes. The insect has become a major problem located in all vineyards and distributed from medium to low altitude of the area. Pierves disease has also become endemic within the United States appearing in California and the southeastern region. The vector that is responsible as stated above is a leafhopper such as the blue-green sharpshooter and the glassy winged sharpshooter. These vectors have shown several endosymbionts which is important for insect growth and development (3). 
+
+Methods:
+
+
+
+
+
+Conclusion:We hope by executing the following pipeline using BWA to align the reads of the genome sequence and using SAMtools to turn it into a fastq file we hope to see the appearance of the disease in the vector of the Sulcia species. From there we will then determine if the overall genome size is affected.
+
+References: (will be put into MLA soon) 
+Sulcia-
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4319508/- Basic Information (1)
+
+https://mra.asm.org/content/8/2/e01347-18 - genome (3)
+https://mbio.asm.org/content/5/5/e01697-14?ijkey=7d03f50c1daba604b42966d188d61720439feb92&keytype2=tf_ipsecsha -evolution stuff
+[plant disease paper pdf in folder]
+(3) https://www.plantwise.org/knowledgebank/datasheet/13420#HostPlantsSectio
+(2) Chang, H. H., Cho, S. T., Canale, M. C., Mugford, S. T., Lopes, J. R., Hogenhout, S. A., & Kuo, C. H. (2015). Complete Genome Sequence of "Candidatus Sulcia muelleri" ML, an Obligate Nutritional Symbiont of Maize Leafhopper (Dalbulus maidis). Genome announcements, 3(1), e01483-14. doi:10.1128/genomeA.01483-14

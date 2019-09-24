@@ -1,0 +1,39 @@
+#GitHub Cheat sheet: https://education.github.com/git-cheat-sheet-education.pdf
+
+#Spark notes from class
+
+#!/usr/bin/env bash
+
+git clone "copied git directions"
+
+# copies the complete repository. Should say Copied 'Foldername to location'
+
+#Text editer
+
+#Little stuff (in command line)
+#vim difficult to use, can do more things
+#Nano less powerful, easy to use
+
+#Big stuff in a seperate window
+#Atom
+#textedit
+#notepad++
+#textwrangler
+
+#Add changes to the github repository
+
+git add *
+#this adds everything to github
+
+git status
+#tells you where you are at with the master branch
+
+git commit -m "AdD tHe ThInG yOu DiD tO tHe RePoSiToRy"
+#this sends it up to github
+
+git push origin master
+#this adds your additions to the master branch
+
+git pull
+#grabs what is uploaded to github in your master RePoSiToRygit p
+
