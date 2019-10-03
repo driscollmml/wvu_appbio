@@ -39,7 +39,7 @@ PBS -q debug
 # Set the walltime, which is the maximum time that your job can run in HH:MM:SS
 # this can not exceed the maximum walltime determined by the queue that you set above
 #
-PBS -lwalltime=00:02:00
+PBS -lwalltime=00:05:00
 
 # Set the number of nodes, and the number of processors per node (up to 12), that you want to use
 #
