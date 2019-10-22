@@ -1,0 +1,16 @@
+PROPOSAL 2
+PEER REVIEW ASSIGNMENTS
+
+final proposals can be found in the directory instructor/proposals_2/.
+
+IMPORTANT NOTE:
+please MAKE A PERSONAL COPY of the Word document if you prefer to work electronically! any changes you make to the copy 
+in the repo will alter everyone's repo.
+
+
+1:00-1:25. group "gitgud" will review the proposal from group "noguiguru"
+
+1:25-1:50. group "noguiguru" will review the proposal from group "nkob"
+
+1:50-2:15. group "nkob" will review the proposal from group "gitgud"
+
