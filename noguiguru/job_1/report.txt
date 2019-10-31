@@ -1,0 +1,14 @@
+HistoryId: NCID_1_17840243_130.14.18.97_5555_1569950608_4032140812_0MetA0_S_HStore
+QueryKey: 7
+ReleaseType: RefSeq
+FileType: GENOME_FASTA
+Flat: true
+
+Query title: Select 1 document(s)
+    
+Search results count: 1
+Entries to download: 1
+
+GENOME_FASTA files in archive: 1
+Total size (bytes): 120000
+Total time: 194 milliseconds
