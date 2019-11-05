@@ -1,0 +1,15 @@
+# how to peek at your sam file (BWA output)
+head FILE.sam
+
+# if you want to create an unsorted BAM first, then a sorted BAM
+# run each command separately
+# creates an unsorted BAM file
+samtools view -o FILE.bam -bS FILE.sam 
+# creates the sorted BAM file
+samtools sort -o > FILE.sorted.bam
+
+# piped together
+samtools view -uS FILE.sam | samtools sort -o > FILE.sorted.bam
+
+# WATCH OUT: use the SORTEd BAM file for bcftools mpileup!
+
