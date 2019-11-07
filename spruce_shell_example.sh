@@ -39,7 +39,7 @@
 # Set the walltime, which is the maximum time that your job can run in HH:MM:SS
 # this can not exceed the maximum walltime determined by the queue that you set above
 #
-#PBS -lwalltime=00:02:00
+#PBS -lwalltime=00:05:00
 
 # Set the number of nodes, and the number of processors per node (up to 12), that you want to use
 #
@@ -48,11 +48,11 @@
 
 ## Give your job a name
 #
-#PBS -N JOBNAME
+#PBS -N PROJECT2
 
 ## Provide your email address, to receive notification when your job starts and ends
 #
-#PBS -m abe -M YOUR_EMAIL_HERE
+#PBS -m abe -M hdc0001@mix.wvu.edu
 
 # a number of software packages are available in the "genomics" module on spruce
 # this is only one of many modules
@@ -85,8 +85,11 @@ cd $SCRATCH
 
 # put your commmand(s) in here
 #
-echo "Hello, World!"
+prefetch -v SRR7796613
 
+fastq-dump -split-files -I SRR7796613
+
+fastq-dump -X 5 -Z SRR7796613
 
 
 
