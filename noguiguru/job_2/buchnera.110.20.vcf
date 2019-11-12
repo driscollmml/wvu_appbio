@@ -1,0 +1,38 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##bcftoolsVersion=1.9+htslib-1.9
+##bcftoolsCommand=mpileup --threads 12 -6 -A -d 10000 -f buchnera_ref.fasta -O b -o buchnera.110.20.bcf buchnera.110.20.map.sorted.bam
+##reference=file://buchnera_ref.fasta
+##contig=<ID=NC_002528.1,length=640681>
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPB,Number=1,Type=Float,Description="Mann-Whitney U test of Read Position Bias (bigger is better)">
+##INFO=<ID=MQB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality Bias (bigger is better)">
+##INFO=<ID=BQB,Number=1,Type=Float,Description="Mann-Whitney U test of Base Quality Bias (bigger is better)">
+##INFO=<ID=MQSB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality vs Strand Bias (bigger is better)">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric.">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=ICB,Number=1,Type=Float,Description="Inbreeding Coefficient Binomial test (bigger is better)">
+##INFO=<ID=HOB,Number=1,Type=Float,Description="Bias in the number of HOMs number (smaller is better)">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
+##bcftools_callVersion=1.9+htslib-1.9
+##bcftools_callCommand=call -o buchnera.110.20.vcf -O v --threads 12 -A -v -m --ploidy 1 buchnera.110.20.bcf; Date=Tue Nov 12 10:31:01 2019
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	buchnera.110.20.map.sorted.bam
+NC_002528.1	74471	.	T	TATA	104	.	INDEL;IDV=4;IMF=0.5;DP=8;VDB=3.81714e-05;SGB=-0.590765;MQSB=1;MQ0F=0;AC=1;AN=1;DP4=1,2,1,4;MQ=60	GT:PL	1:131,0
+NC_002528.1	182279	.	T	TAA	101	.	INDEL;IDV=17;IMF=0.34;DP=50;VDB=0.262084;SGB=-0.686358;MQSB=0.302609;MQ0F=0;AC=1;AN=1;DP4=13,23,5,9;MQ=14	GT:PL	1:129,0
+NC_002528.1	194350	.	TAAA	TAAAA	26.4503	.	INDEL;IDV=93;IMF=0.519553;DP=179;VDB=0.00314915;SGB=-0.693147;MQSB=0.686365;MQ0F=0.0111732;AC=1;AN=1;DP4=47,65,39,28;MQ=10	GT:PL	1:54,0
+NC_002528.1	202843	.	TC	T	81	.	INDEL;IDV=106;IMF=1;DP=106;VDB=0;SGB=-0.693147;MQSB=0.397818;MQ0F=0;AC=1;AN=1;DP4=27,18,33,28;MQ=46	GT:PL	1:108,0
+NC_002528.1	206883	.	ATT	ATTGTT	65	.	INDEL;IDV=3;IMF=0.375;DP=8;VDB=0.938857;SGB=-0.511536;MQSB=0.868321;MQ0F=0;AC=1;AN=1;DP4=2,3,2,1;MQ=39	GT:PL	1:95,3
+NC_002528.1	425371	.	G	GA	90	.	INDEL;IDV=27;IMF=0.818182;DP=33;VDB=1.01517e-07;SGB=-0.692717;MQSB=0.546875;MQ0F=0;AC=1;AN=1;DP4=5,5,11,12;MQ=15	GT:PL	1:117,0
+NC_002528.1	449110	.	TAA	TA	79	.	INDEL;IDV=102;IMF=0.971429;DP=105;VDB=2.00846e-30;SGB=-0.693147;MQSB=0.991911;MQ0F=0;AC=1;AN=1;DP4=15,34,22,34;MQ=55	GT:PL	1:106,0
+NC_002528.1	610911	.	TAA	T	49.6781	.	INDEL;IDV=29;IMF=0.568627;DP=51;VDB=1.78604e-09;SGB=-0.692976;MQSB=0.973971;MQ0F=0;AC=1;AN=1;DP4=12,13,9,17;MQ=15	GT:PL	1:81,4
+NC_002528.1	627468	.	TTAGTA	TTA	10.2729	.	INDEL;IDV=5;IMF=1;DP=5;VDB=0.104078;SGB=-0.511536;MQSB=1;MQ0F=0;AC=1;AN=1;DP4=0,2,1,2;MQ=23	GT:PL	1:42,5
