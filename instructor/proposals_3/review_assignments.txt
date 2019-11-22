@@ -1,4 +1,4 @@
-PROPOSAL 3
+ PROPOSAL 3
 PEER REVIEW ASSIGNMENTS
 
 final proposals can be found in the directory instructor/proposals_3/.
