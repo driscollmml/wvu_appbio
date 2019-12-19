@@ -1,12 +1,20 @@
 setwd("C:/Users/arpol/Not_Bad/R_packages/")
+library(vctrs)
 library(ballgown)
 library(RSkittleBrewer)
 library(genefilter)
 library(dplyr)
 library(devtools)
 
+bg_chrX=ballgown(dataDir="ballgown", samplePattern = "ane", meas='all')
+
+sampleNames(bg_chrX) 
 #read in the folder names with the read data
-pheno_data = read.csv("run_data.csv")
+pheno_data = read.csv("class_work/run_data.csv")
+pData(bg_chrX)=pheno_data
+
+tx_table = texpr(bg_chrX,  "all")
+fpkm = texpr(bg_chrX,meas="FPKM")
 
 #here we specifically made the files into a ballgown variable
 bg_chrX = ballgown(dataDir = "ballgown", samplePattern = "lane", pData=pheno_data)
